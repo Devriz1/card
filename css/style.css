@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.portfolio img {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Ensure image is round */
+    margin-bottom: 20px;
+}
+
+.portfolio h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #007bff; /* Adjust icon color */
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.about {
+    margin-top: 30px;
+}
+
+.about h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Media Query for Smaller Devices */
+@media only screen and (max-width: 600px) {
+    .portfolio img {
+        width: 120px; /* Decrease image size for smaller screens */
+    }
+
+    .portfolio h1 {
+        font-size: 20px; /* Decrease font size for name */
+    }
+
+    .portfolio p {
+        font-size: 16px; /* Decrease font size for description */
+    }
+
+    .button-container button {
+        font-size: 14px; /* Decrease button font size */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Decrease social icon size */
+    }
+
+    .about h1 {
+        font-size: 20px; /* Decrease heading font size */
+    }
+
+    .about p {
+        font-size: 16px; /* Decrease paragraph font size */
+    }
+}
