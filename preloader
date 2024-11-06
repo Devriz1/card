@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="card/css/style1.css">
+  </head>
+    <body>
+<div class="banter-loader">
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+  <div class="banter-loader__box"></div>
+</div>
+<script>
+window.addEventListener('load', function() {
+  // Hide the preloader once the page has finished loading
+  document.getElementById('preloader').style.display = 'none';
+  
+  // Optionally, show content after preloader disappears
+  document.getElementById('content').style.display = 'block';
+
+  // Redirect after a short delay (e.g., 2 seconds)
+  setTimeout(function() {
+    window.location.href = "https://devriz1.github.io/card"; // Put your actual URL here
+  }, 2000); // Adjust the delay as needed (2000 ms = 2 seconds)
+});
+
+</script>
+<body>
+  <html>
