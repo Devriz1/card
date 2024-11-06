@@ -1,6 +1,29 @@
+/* Light mode styles (default) */
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --container-bg-color: #fff;
+    --button-bg-color: #007bff;
+    --button-text-color: #fff;
+    --icon-color: #007bff;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        --background-color: #121212;
+        --text-color: #e0e0e0;
+        --container-bg-color: #333;
+        --button-bg-color: #1e90ff;
+        --button-text-color: #fff;
+        --icon-color: #1e90ff;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -10,29 +33,31 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
+    background-color: var(--container-bg-color);
 }
 
 .portfolio {
-    background-color: #fff;
+    background-color: var(--container-bg-color);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio img {
-    width: 150px; 
-    border-radius: 50%; 
+    width: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
 .portfolio h1 {
     font-size: 24px;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .portfolio p {
     font-size: 18px;
-    color: #666;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -43,19 +68,20 @@ body {
 .button-container button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: 1px solid #007bff;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: 1px solid var(--button-bg-color);
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s ease-out, box-shadow 0.2s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .button-container button:hover {
-    background-color: #0056b3; 
-    color: #fff; 
-    transform: translateY(-2px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #0056b3;
+    color: var(--button-text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons {
@@ -63,14 +89,14 @@ body {
 }
 
 .social-icons a {
-    color: #007bff; 
+    color: var(--icon-color);
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #0056b3; 
+    color: #0056b3;
 }
 
 .about {
@@ -79,12 +105,13 @@ body {
 
 .about h1 {
     font-size: 24px;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .about p {
     font-size: 18px;
-    color: #333;
+    color: var(--text-color);
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
@@ -94,30 +121,30 @@ body {
 /* Media Query for Smaller Devices */
 @media only screen and (max-width: 600px) {
     .portfolio img {
-        width: 120px; 
+        width: 120px;
     }
 
     .portfolio h1 {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .portfolio p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     .button-container button {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .social-icons a {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .about h1 {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .about p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
